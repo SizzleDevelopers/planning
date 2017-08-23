@@ -4,6 +4,8 @@ Readme, UI markup, etc.
 ![Wed initial discussion](https://github.com/SizzleDevelopers/planning/raw/master/assets/23aug2017-discussion.jpg)
 
 ## MVP
+Prototype (live) https://share.proto.io/6EKL8B/
+
 * [ ] As a user I want to be notified that a sizzle has been setup including location, time and what to bring
 * [ ] MVP deployment to Heroku
 * [ ] As a user I want to create a meal when I add my [ ]time/place/ingredient
@@ -12,3 +14,9 @@ Readme, UI markup, etc.
 * [ ] As a user I want to add a location for a sizzle
 * [ ] As a user I want to add my availability to sizzle
 * [ ] As a user I want to login to see my sizzles
+
+### Learning objectives
+Gabe: Auth, testing
+Carla: Auth, React + Redux
+Annelise: React + Redux, testing
+Chris: Mentoring, CSS
