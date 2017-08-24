@@ -8,7 +8,7 @@ Prototype (live) https://share.proto.io/6EKL8B/
 
 * [ ] As a user I want to be notified that a sizzle has been setup including location, time and what to bring
 * [ ] MVP deployment to Heroku
-* [ ] As a user I want to create a meal when I add my [ ]time/place/ingredient
+* [ ] As a user I want to create a meal when I add my time/place/ingredient
 * [ ] As a user i want to search for ingredient before I add so I don't unnecessarily repeat ingredients
 * [ ] As a user I want to add my ingredient to sizzle
 * [ ] As a user I want to add a location for a sizzle
