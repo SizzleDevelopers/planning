@@ -15,6 +15,12 @@ Prototype (live) https://share.proto.io/6EKL8B/
 * [ ] As a user I want to add my availability to sizzle
 * [ ] As a user I want to login to see my sizzles
 
+### Roles
+Carla: Scrum master
+Gabe: Product owner
+Annelise: Fun master
+Chris: Mentor
+
 ### Learning objectives
 Gabe: Auth, testing
 Carla: Auth, React + Redux
