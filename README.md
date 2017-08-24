@@ -2,6 +2,7 @@
 Readme, UI markup, etc.
 
 ![Wed initial discussion](https://github.com/SizzleDevelopers/planning/raw/master/assets/23aug2017-discussion.jpg)
+![Thur discussion on tables and routes](https://github.com/SizzleDevelopers/planning/raw/master/assets/24aug2017-discussion.jpg)
 
 ## MVP
 Prototype (live) https://share.proto.io/6EKL8B/
@@ -14,6 +15,7 @@ Prototype (live) https://share.proto.io/6EKL8B/
 * [ ] As a user I want to add a location for a sizzle
 * [ ] As a user I want to add my availability to sizzle
 * [ ] As a user I want to login to see my sizzles
+
 
 ### Roles
 Carla: Scrum master
