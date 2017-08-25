@@ -18,6 +18,7 @@ Response example
 ```
 
 Url | Method | Description
+--- | --- | ---
 \skills | GET | Get all skills
 
 Response example
