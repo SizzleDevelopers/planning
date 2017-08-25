@@ -1,9 +1,6 @@
 # Planning
 Readme, UI markup, etc.
 
-![Wed initial discussion](https://github.com/SizzleDevelopers/planning/raw/master/assets/23aug2017-discussion.jpg)
-![Thur discussion on tables and routes](https://github.com/SizzleDevelopers/planning/raw/master/assets/24aug2017-discussion.jpg)
-
 ## MVP
 Prototype (live) https://share.proto.io/6EKL8B/
 
@@ -78,3 +75,7 @@ Gabe: Auth, testing
 Carla: Auth, React + Redux
 Annelise: React + Redux, testing
 Chris: Mentoring, CSS
+
+## Meeting minutes
+![Wed initial discussion](https://github.com/SizzleDevelopers/planning/raw/master/assets/23aug2017-discussion.jpg)
+![Thur discussion on tables and routes](https://github.com/SizzleDevelopers/planning/raw/master/assets/24aug2017-discussion.jpg)
