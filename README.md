@@ -6,6 +6,7 @@ Prototype (live) https://share.proto.io/6EKL8B/
 
 ### Server routes
 Url | Method | Description
+--- | --- | ---
 \ingredients | GET | Get all ingredients
 
 Response example
@@ -44,6 +45,7 @@ Response example
 ```
 
 Url | Method | Description
+--- | --- | ---
 \events | GET | Get all events
 
 Response example
@@ -55,6 +57,7 @@ Response example
 ```
 
 Url | Method | Description
+--- | --- | ---
 \events\:id | GET | Get an event by id
 
 Response example
@@ -66,6 +69,7 @@ Request url: `\events\1`
 ```
 
 Url | Method | Description
+--- | --- | ---
 \events\:id | POST | Edit an event by id
 
 Request example
@@ -86,6 +90,7 @@ Response example
 
 
 Url | Method | Description
+--- | --- | ---
 \events | POST | Create a new event
 
 Request example
