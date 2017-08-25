@@ -53,6 +53,7 @@ Response example
 
 
 Url | Method | Description
+--- | --- | ---
 \locations | GET | Get all locations
 
 Response example
@@ -96,7 +97,8 @@ Request example
 Request url: `\events\1`
 ```
 {
-  description: 'a brand new apple pie'
+  description: 'a brand new apple pie',
+  is_confirmed: true
 }
 ```
 
@@ -104,7 +106,7 @@ Request url: `\events\1`
 Response example
 ```
 {
-  id: 1, date: 17/AUG/2017, is_am: true, description: 'a brand new apple pie', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}]
+  id: 1, date: 17/AUG/2017, is_am: true, description: 'a brand new apple pie', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}], is_confirmed: true
 }
 ```
 
@@ -123,14 +125,58 @@ Request example
 Response example
 ```
 {
-  id: 5, date: 17/AUG/2017, is_am: true, description: 'a brand new day', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}],
+  id: 5, date: 17/AUG/2017, is_am: true, description: 'a brand new day', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}], is_confirmed: false
 }
 ```
 
-## Tables
+## Table schemas
 
-users
+### users table
+Column names | id | username | hash | address | email | phone
+--- | --- | --- | --- | --- | --- | ---
+Types | Primary key | string | binary | string | string | string
 
+### ingredients table
+Column names | id | ingredient
+--- | --- | --- 
+Types | Primary key | string 
+
+### skills table
+Column names | id | skill
+--- | --- | --- 
+Types | Primary key | string 
+
+### locations table
+Column names | id | location 
+--- | --- | --- 
+Types | Primary key | string 
+
+### user_ingredient table
+Column names | id | user_id | ingredient_id | qty 
+--- | --- | --- | --- | --- 
+Types | Primary key | string | integer (foreign key to users table) | integer (foreign key to ingredients table) | float
+
+### user_location table
+Column names | id | user_id | location_id
+--- | --- | --- | --- | --- 
+Types | Primary key | integer (foreign key to users table) | integer (foreign key to locations table)
+
+
+### events table
+Column names | id | date | is_am | location_id
+--- | --- | --- | --- | --- 
+Types | Primary key | datetime | boolean | integer (foreign key to locations table)
+
+### eventinfos table
+Column names | id | event_id | ingredient_id | skill_id |  | is_confirmed
+--- | --- | --- | --- | --- | --- | ---
+Types | Primary key | integer (foreign key to events table) | integer (foreign key to events table) | integer (foreign key to ingredients table) | integer (foreign key to skills table) | boolean 
+
+
+### user_skill table
+Column names | id | user_id | skill_id
+--- | --- | --- | --- | --- 
+Types | Primary key | integer (foreign key to users table) | integer (foreign key to skill table)
 
 ## Roles
 Carla: Scrum master
@@ -142,7 +188,7 @@ Chris: Mentor
 Gabe: Auth, testing
 Carla: Auth, React + Redux
 Annelise: React + Redux, testing
-Chris: Mentoring, CSS
+Chris: Mentoring, CSS, testing
 
 ## Meeting minutes
 ![Wed initial discussion](https://github.com/SizzleDevelopers/planning/raw/master/assets/23aug2017-discussion.jpg)
