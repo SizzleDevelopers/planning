@@ -54,6 +54,37 @@ Response example
 ```
 
 Url | Method | Description
+\events\:id | GET | Get an event by id
+
+Response example
+Request url: `\events\1`
+```
+{
+  id: 1, date: 17/AUG/2017, is_am: true, description: 'a brand new day', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}]
+}
+```
+
+Url | Method | Description
+\events\:id | POST | Edit an event by id
+
+Request example
+Request url: `\events\1`
+```
+{
+  description: 'a brand new apple pie'
+}
+```
+
+
+Response example
+```
+{
+  id: 1, date: 17/AUG/2017, is_am: true, description: 'a brand new apple pie', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}]
+}
+```
+
+
+Url | Method | Description
 \events | POST | Create a new event
 
 Request example
