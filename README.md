@@ -4,7 +4,7 @@ Readme, UI markup, etc.
 ## MVP
 Prototype (live) https://share.proto.io/6EKL8B/
 
-### Server routes
+## Server routes
 Url | Method | Description
 --- | --- | ---
 \ingredients | GET | Get all ingredients
@@ -16,6 +16,26 @@ Response example
   {id: 2, ingredient: 'apple'},
   {id: 3, ingredient: 'cucumber'}
 ]
+```
+
+Url | Method | Description
+--- | --- | ---
+\ingredients | POST | Add an ingredient to an user, create a new ingredient if it does not exist
+
+Request example
+```
+{
+  username: 'bob',
+  ingredient: 'cheese',
+  qty: 5.5
+}
+```
+
+Response example
+```
+{
+  id: 5, username: 'bob', ingredient: 'cheese', qty: 5.5
+}
 ```
 
 Url | Method | Description
@@ -106,6 +126,11 @@ Response example
   id: 5, date: 17/AUG/2017, is_am: true, description: 'a brand new day', location: '22 aaa ave', skills:[{id: 1, skill: 'Chef' }], ingredients: [{id: 1, ingredient: 'tomato'}],
 }
 ```
+
+## Tables
+
+users
+
 
 ## Roles
 Carla: Scrum master
