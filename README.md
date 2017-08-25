@@ -158,9 +158,13 @@ Types | Primary key | string | integer (foreign key to users table) | integer (f
 
 ### user_location table
 Column names | id | user_id | location_id
---- | --- | --- | --- | --- 
+--- | --- | --- | ---  
 Types | Primary key | integer (foreign key to users table) | integer (foreign key to locations table)
 
+### user_skill table
+Column names | id | user_id | skill_id
+--- | --- | --- | --- 
+Types | Primary key | integer (foreign key to users table) | integer (foreign key to skill table)
 
 ### events table
 Column names | id | date | is_am | location_id
@@ -173,10 +177,6 @@ Column names | id | event_id | ingredient_id | skill_id |  | is_confirmed
 Types | Primary key | integer (foreign key to events table) | integer (foreign key to events table) | integer (foreign key to ingredients table) | integer (foreign key to skills table) | boolean 
 
 
-### user_skill table
-Column names | id | user_id | skill_id
---- | --- | --- | --- | --- 
-Types | Primary key | integer (foreign key to users table) | integer (foreign key to skill table)
 
 ## Roles
 Carla: Scrum master
