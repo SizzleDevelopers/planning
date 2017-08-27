@@ -147,19 +147,14 @@ Column names | id | skill
 Types | Primary key | string 
 
 ### locations table
-Column names | id | location 
+Column names | id | address | user_id 
 --- | --- | --- 
-Types | Primary key | string 
+Types | Primary key | string | integer (foreign key to users table)
 
 ### user_ingredient table
 Column names | id | user_id | ingredient_id | qty 
 --- | --- | --- | --- | --- 
 Types | Primary key | string | integer (foreign key to users table) | integer (foreign key to ingredients table) | float
-
-### user_location table
-Column names | id | user_id | location_id
---- | --- | --- | ---  
-Types | Primary key | integer (foreign key to users table) | integer (foreign key to locations table)
 
 ### user_skill table
 Column names | id | user_id | skill_id
