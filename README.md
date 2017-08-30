@@ -148,13 +148,13 @@ Types | Primary key | string
 
 ### locations table
 Column names | id | address | user_id 
---- | --- | --- 
+--- | --- | --- |---
 Types | Primary key | string | integer (foreign key to users table)
 
 ### user_ingredient table
 Column names | id | user_id | ingredient_id | qty 
 --- | --- | --- | --- | --- 
-Types | Primary key | string | integer (foreign key to users table) | integer (foreign key to ingredients table) | float
+Types | Primary key | integer (foreign key to users table) | integer (foreign key to ingredients table) | float
 
 ### user_skill table
 Column names | id | user_id | skill_id
@@ -167,9 +167,9 @@ Column names | id | date | is_am | location_id
 Types | Primary key | datetime | boolean | integer (foreign key to locations table)
 
 ### eventinfos table
-Column names | id | event_id | ingredient_id | skill_id |  | is_confirmed
---- | --- | --- | --- | --- | --- | ---
-Types | Primary key | integer (foreign key to events table) | integer (foreign key to events table) | integer (foreign key to ingredients table) | integer (foreign key to skills table) | boolean 
+Column names | id | event_id | ingredient_id | skill_id | is_confirmed
+--- | --- | --- | --- | --- | --- 
+Types | Primary key | integer (foreign key to events table) | integer (foreign key to ingredients table) | integer (foreign key to skills table) | boolean 
 
 
 
